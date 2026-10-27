@@ -1,0 +1,70 @@
+{
+  "course": "build-kv-store",
+  "language": "cpp",
+  "language_id": 1054,
+  "entrypoint": "main.cpp",
+  "version": 1,
+  "content_hash": "fd6d9489a4926661",
+  "lessons": [
+    {
+      "slug": "kv-basics",
+      "tests_hash": "5d137a162fa4"
+    },
+    {
+      "slug": "ordered-iter",
+      "tests_hash": "d57936ac31cb"
+    },
+    {
+      "slug": "ttl",
+      "tests_hash": "6b1eb909817d"
+    },
+    {
+      "slug": "wal",
+      "tests_hash": "e5d1e8706450"
+    },
+    {
+      "slug": "memtable-flush",
+      "tests_hash": "beafb79d614f"
+    },
+    {
+      "slug": "sstable",
+      "tests_hash": "05564587b3dd"
+    },
+    {
+      "slug": "lsm-read",
+      "tests_hash": "b100c9178cd7"
+    },
+    {
+      "slug": "compaction",
+      "tests_hash": "c371a649b490"
+    },
+    {
+      "slug": "bloom-filter",
+      "tests_hash": "4b29659a4a28"
+    },
+    {
+      "slug": "transactions",
+      "tests_hash": "fe38d23aae31"
+    },
+    {
+      "slug": "mvcc",
+      "tests_hash": "4a17a35254b9"
+    },
+    {
+      "slug": "full-kv",
+      "tests_hash": "44422baf4d86"
+    },
+    {
+      "slug": "bitcask",
+      "tests_hash": "61afee1987e3"
+    },
+    {
+      "slug": "btree-vs-lsm",
+      "tests_hash": "86cea9b59ed8"
+    },
+    {
+      "slug": "secondary-indexes",
+      "tests_hash": "ae8fda92031a"
+    }
+  ]
+}
