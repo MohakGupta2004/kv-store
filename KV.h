@@ -6,10 +6,10 @@
 #define KV_STORE_KV_H
 #include <iostream>
 #include <string>
-#include <unordered_map>
+#include <map>
 
 template<typename T>
-std::unordered_map<std::string,T> store;
+std::map<std::string,T> store;
 
 template <typename T>
 class KV {
@@ -49,7 +49,7 @@ int KV<T>::count() {
 template<typename T>
 void KV<T>::list() {
     for (const auto& it:store<T>) {
-       std::cout<<it.first<<"="<<it.second<<std::flush;
+       std::cout<<it.first<<"="<<it.second<<"\n";
     }
 }
 

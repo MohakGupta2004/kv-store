@@ -30,6 +30,6 @@ int main() {
         } else if (command=="COUNT") {
             std::cout<<kv.count();
         }
-        std::cout << std::endl;
+        if (command != "LIST") std::cout << std::endl;
     }
 }
