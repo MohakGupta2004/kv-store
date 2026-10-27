@@ -49,7 +49,7 @@ int KV<T>::count() {
 template<typename T>
 void KV<T>::list() {
     for (const auto& it:store<T>) {
-       std::cout<<it.first<<"="<<it.second<<std::endl;
+       std::cout<<it.first<<"="<<it.second<<std::flush;
     }
 }
 
