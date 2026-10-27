@@ -14,11 +14,10 @@ int main() {
         std::string command;
         std::string key;
         std::string value;
-        std::string garbage;
         input>>command;
         input>>key;
-        input>>value;
-        input>>garbage;
+        input>>std::ws;
+        getline(input, value);
         KV<decltype(value)> kv;
         if (command == "PUT") {
             std::cout << kv.put(key, value);
