@@ -1,1 +1,1 @@
-add_executable(kv_store main.cpp KV.cpp KV.h)
+add_executable(kv_store main.cpp KV.h)

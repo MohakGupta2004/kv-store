@@ -17,7 +17,6 @@ int main() {
         input>>command;
         input>>key;
         input>>value;
-        std::cout << std::endl;
         KV<decltype(value)> kv;
         if (command == "PUT") {
             std::cout << kv.put(key, value);
@@ -29,9 +28,8 @@ int main() {
         } else if (command=="LIST") {
             kv.list();
         } else if (command=="COUNT") {
-            std::cout <<
-            kv.count();
+            std::cout<<kv.count();
         }
-
+        std::cout << std::endl;
     }
 }
