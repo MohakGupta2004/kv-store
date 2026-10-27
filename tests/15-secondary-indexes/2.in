@@ -1,0 +1,4 @@
+PUT a x
+GET a
+DELETE a
+GET a

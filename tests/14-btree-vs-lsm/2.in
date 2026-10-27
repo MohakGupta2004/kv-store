@@ -1,0 +1,5 @@
+RESET
+PUT a 1
+PUT b 1
+PUT c 1
+REPORT

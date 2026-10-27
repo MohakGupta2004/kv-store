@@ -1,0 +1,6 @@
+OK
+OK btree+=4 lsm+=1
+OK btree+=4 lsm+=1
+OK btree+=4 lsm+=1
+BTREE total=12 LSM total=3
+RECOMMEND lsm

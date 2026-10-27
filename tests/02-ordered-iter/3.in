@@ -1,0 +1,4 @@
+PUT user:1 a
+PUT user:2 b
+PUT post:1 x
+PREFIX user:

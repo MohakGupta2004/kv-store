@@ -1,0 +1,4 @@
+PUT a 1
+DELETE a
+LOG-DUMP
+LIST

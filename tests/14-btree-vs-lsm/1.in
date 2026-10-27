@@ -1,0 +1,11 @@
+RESET
+PUT a 1
+PUT b 2
+PUT c 3
+FLUSH
+GET a
+GET b
+PUT d 4
+FLUSH
+GET c
+REPORT

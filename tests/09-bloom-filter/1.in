@@ -1,0 +1,4 @@
+BLOOM-NEW
+BLOOM-ADD apple
+BLOOM-CHECK apple
+BLOOM-CHECK banana

@@ -1,0 +1,5 @@
+PUT x 1
+PUT y 2
+PUT x 3
+GET x
+COUNT

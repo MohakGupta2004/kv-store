@@ -1,0 +1,11 @@
+OK offset=0
+OK offset=15
+OK offset=26
+alice
+<nil>
+34
+1
+OK offset=34
+COMPACTED log_bytes=47->>=13 entries=1
+bob
+1

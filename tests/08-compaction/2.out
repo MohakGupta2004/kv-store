@@ -1,0 +1,4 @@
+OK
+FLUSHED file=0 entries=1
+COMPACTED 1 -> 1 (1 entries)
+SSTABLE 1: keys=1 first=a last=a

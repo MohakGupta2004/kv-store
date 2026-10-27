@@ -1,0 +1,8 @@
+PUT name alice
+PUT age 30
+GET name
+GET email
+DELETE age
+GET age
+LIST
+COUNT

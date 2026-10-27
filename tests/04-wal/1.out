@@ -1,0 +1,15 @@
+OK
+OK
+OK
+OK
+age=31
+name=alice
+PUT name alice
+PUT age 30
+DEL age
+PUT age 31
+OK
+(empty)
+OK
+age=31
+name=alice

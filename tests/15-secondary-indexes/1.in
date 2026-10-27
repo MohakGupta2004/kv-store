@@ -1,0 +1,10 @@
+PUT u1 nyc
+PUT u2 la
+PUT u3 nyc
+BY-TAG nyc
+BY-TAG la
+RETAG u1 la
+BY-TAG nyc
+BY-TAG la
+DELETE u3
+INDEX-DUMP

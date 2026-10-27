@@ -1,0 +1,21 @@
+TX 1 rts=0
+OK
+OK wts=1
+TX 2 rts=1
+TX 3 rts=1
+OK
+OK wts=2
+1
+<nil>
+OK
+OK wts=3
+TX 4 rts=3
+TX 5 rts=3
+OK
+OK wts=4
+OK
+ABORT key=a
+a: ts=1 1
+a: ts=3 99
+a: ts=4 100
+b: ts=2 1

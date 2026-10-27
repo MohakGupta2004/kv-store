@@ -1,0 +1,10 @@
+PUT name alice
+PUT age 30
+DELETE age
+PUT age 31
+LIST
+LOG-DUMP
+CRASH
+LIST
+REPLAY
+LIST

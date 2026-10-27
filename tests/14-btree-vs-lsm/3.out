@@ -1,0 +1,16 @@
+OK
+OK sstables=1
+OK sstables=2
+OK sstables=3
+OK sstables=4
+OK sstables=5
+OK sstables=6
+OK sstables=7
+OK sstables=8
+OK btree+=3 lsm+=6
+OK btree+=3 lsm+=6
+OK btree+=3 lsm+=6
+OK btree+=3 lsm+=6
+OK btree+=3 lsm+=6
+BTREE total=15 LSM total=30
+RECOMMEND btree

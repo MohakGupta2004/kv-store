@@ -1,0 +1,8 @@
+PUT b 2
+PUT a 1
+PUT c 3
+FLUSH
+GET a
+GET b
+GET d
+SSTABLES

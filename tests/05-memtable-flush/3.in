@@ -1,0 +1,4 @@
+PUT a 1
+FLUSH
+DELETE a
+GET a

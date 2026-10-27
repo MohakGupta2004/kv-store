@@ -1,0 +1,12 @@
+PUT a 1
+PUT b 2
+FLUSH
+PUT b 22
+PUT c 3
+DELETE a
+FLUSH
+PUT b 222
+GET a
+GET b
+GET c
+SCAN a z

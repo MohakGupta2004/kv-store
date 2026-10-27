@@ -1,0 +1,5 @@
+BEGIN
+PUT a 1
+GET a
+COMMIT
+GET a

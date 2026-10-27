@@ -1,0 +1,5 @@
+PUT user:1 alice
+PUT user:2 bob
+PUT user:3 carol
+PUT post:1 hello
+SCAN user:1 user:3

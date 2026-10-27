@@ -1,0 +1,16 @@
+OK
+OK
+FLUSHED file=0 entries=2
+OK
+OK
+OK
+a=100
+c=3
+FLUSHED file=1 entries=3
+FILE 0:
+a=1
+b=2
+FILE 1:
+a=100
+b=TOMBSTONE
+c=3

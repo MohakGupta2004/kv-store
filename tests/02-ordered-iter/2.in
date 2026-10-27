@@ -1,0 +1,4 @@
+PUT a 1
+PUT b 2
+PUT c 3
+SCAN a c

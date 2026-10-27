@@ -1,0 +1,3 @@
+PUT k v
+GET k
+LOG-SIZE
