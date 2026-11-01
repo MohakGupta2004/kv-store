@@ -30,6 +30,10 @@ int main() {
             kv.list();
         } else if (command=="COUNT") {
             std::cout<<kv.count();
+        } else if (command=="SCAN") {
+            kv.scan(key, value);
+        } else if (command=="PREFIX") {
+            kv.prefix(key);
         }
         if (command != "LIST") std::cout << std::endl;
     }

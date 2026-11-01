@@ -18,6 +18,8 @@ public:
     T get(std::string key);
     std::string del(std::string key);
     void list();
+    void scan(const std::string& first, const std::string& second);
+    void prefix(const std::string& key);
     int count();
 };
 
@@ -50,6 +52,24 @@ template<typename T>
 void KV<T>::list() {
     for (const auto& it:store<T>) {
        std::cout<<it.first<<"="<<it.second<<"\n";
+    }
+}
+
+template<typename T>
+void KV<T>::scan(const std::string& start,const std::string& end) {
+    for (const auto& it:store<T>) {
+        if (start<=it.first && it.first<end) {
+            std::cout << it.first<<"="<<it.second<<std::endl;
+        }
+    }
+}
+
+template<typename T>
+void KV<T>::prefix(const std::string &key) {
+    for (const auto& it:store<T>) {
+        if (it.first.rfind(key, 0)==0) {
+            std::cout << it.first<<"="<<it.second<<std::endl;
+        }
     }
 }
 
