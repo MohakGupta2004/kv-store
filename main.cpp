@@ -42,11 +42,19 @@ int main() {
             std::cout << kv.put(key, value, std::stoull(expiry));
         } else if (command=="GET") {
             std::cout <<kv.get(key);
-        } else if (command=="DELETE") {
+        } else if (command=="NOW") {
+            size_t time = static_cast<size_t>(std::stoull(key));
+            kv.setTime(time);
+            std::cout << "OK";
+        } else if (command=="TTL") {
+            std::cout << kv.getTime(key);
+        }else if (command=="DELETE") {
             std::cout <<
             kv.del(key);
         } else if (command=="LIST") {
             kv.list();
+        } else if (command=="EXPIRE-COUNT") {
+            kv.expiry_count();
         } else if (command=="COUNT") {
             std::cout<<kv.count();
         } else if (command=="SCAN") {
