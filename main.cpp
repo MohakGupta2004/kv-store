@@ -1,6 +1,7 @@
 #include <iostream>
 #include <set>
 #include <string>
+#include <vector>
 #include <sstream>
 
 #include "KV.h"
@@ -14,13 +15,31 @@ int main() {
         std::string command;
         std::string key;
         std::string value;
+        std::string expiry;
         input>>command;
         input>>key;
-        input>>std::ws;
-        getline(input, value);
+        std::string token;
+        std::vector<std::string> parts;
+        while (input >> token) {
+           parts.push_back(token);
+        }
+        if (command == "PUT" && parts.size() > 1) {
+            std::string last = parts.back();
+            if (last.find_first_not_of("0123456789") == std::string::npos) {
+                expiry = last;
+                parts.pop_back();
+            }
+        }
+        for (int i = 0; i < parts.size(); i++) {
+            if (i > 0) value += ' ';
+            value += parts[i];
+        }
         KV<decltype(value)> kv;
         if (command == "PUT") {
-            std::cout << kv.put(key, value);
+            if (expiry.empty()) {
+               expiry = "1000000000";
+            }
+            std::cout << kv.put(key, value, std::stoull(expiry));
         } else if (command=="GET") {
             std::cout <<kv.get(key);
         } else if (command=="DELETE") {
