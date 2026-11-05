@@ -47,7 +47,11 @@ int main() {
             kv.setTime(time);
             std::cout << "OK";
         } else if (command=="TTL") {
-            std::cout << kv.getTime(key);
+            if (kv.getTime(key)==1e9) {
+                std::cout << "<nil>";
+            } else {
+                std::cout << kv.getTime(key);
+            }
         }else if (command=="DELETE") {
             std::cout <<
             kv.del(key);

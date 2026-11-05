@@ -65,6 +65,12 @@ void KV<T>::setTime(size_t t) {
 
 template<typename T>
 int KV<T>::getTime(const std::string& key) {
+    if (store<T>.find(key)==store<T>.end()) {
+        return 1e9;
+    }
+    if (store<T>[key].expiry==1e9) {
+        return -1;
+    }
     return store<T>[key].expiry;
 }
 
