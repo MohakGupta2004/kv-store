@@ -50,6 +50,7 @@ T KV<T>::get(std::string key) {
     auto it = store<T>.find(key);
     if (it!=store<T>.end()) {
         if (it->second.expiry>time) {
+            store<T>[key] = Entry<T>{key, it->second.expiry-time};
             return it->second.value;
         } else {
             store<T>.erase(key);
@@ -60,7 +61,10 @@ T KV<T>::get(std::string key) {
 
 template<typename T>
 void KV<T>::setTime(size_t t) {
-   time = t;
+    for (auto& it:store<T>) {
+        it.second.expiry -= t;
+    }
+    time = t;
 }
 
 template<typename T>
